@@ -14,7 +14,7 @@ class Estudiantes extends Controller
     }
 
     public function Registrar(Request $r){
-        $estudiante = new Estudiante();//intancia un objeto del modelko Facultad
+        $estudiante = new Estudiante();//intancia un objeto del modelo Facultad
         $estudiante->nomestudiante = $r->input('nombreEstudiante');//monbrefacultad=a lo que esta en el formulario
         $estudiante->codestudiante = $r->input('codigoEstudiante');
         $estudiante->edaestudiante = $r->input('edad');
